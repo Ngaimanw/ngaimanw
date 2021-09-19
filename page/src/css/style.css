@@ -3,6 +3,7 @@ body{
     background-color: #272525;
     background-image: url(../img/bg-01.png);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -96,7 +97,6 @@ h4{
 } */
 
 #main{
-    margin-top: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,14 +104,21 @@ h4{
 }
 
 
+.header-content{
+    margin: 5%;
+}
+
+
 /* about part setting */
 #about{
     display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
 .about-box{
-    margin: 5% 10% 5% 10%;
+    margin: 1% 10% 1% 10%;
 }
 
 .about-box h4{
@@ -122,31 +129,70 @@ h4{
 /* services part setting */
 #services{
     display: flex;
-
+    height: 20%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
-#services button{
+#services .services-box{
+    
+}
+
+.services-box h1{
+    color: rgb(255, 255, 255);
+}
+
+
+#services .services-box button{
     background-color: #363636;
     color: #cecece;
     border: none;
     cursor: pointer;
-    width: 120px;
-    height: 120px;
-    border: 5px;
+    box-sizing: border-box;
+    width: 140px;
+    height: 140px;
+    margin: 5px;
 }
+
+
+#services button:hover{
+    background-color: #d49469;
+    color: #000;
+}
+
 
 /* contact part setting */
-
-
-#contact button{
-    background-color: #d49469;
-    border: none;
-    cursor: pointer;
-    width: 120px;
-    height: 50px;
-    border-radius: 5px;    
-    margin-top: 40%;
+#contact{
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.contact-box{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.contact-card{
+    flex: 1;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: #cecece;
+}
+
+a:hover{
+    color: #d49469;
+}
+
+
 
 #contact button a{
     font-weight: bolder;
@@ -165,7 +211,20 @@ h4{
     width: 120px;
     height: 50px;
     border-radius: 5px;    
-    margin-top: 40%;
+    margin-top: 5%;
+}
+
+
+/* footer setting */
+
+footer{
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.footer-message{
+    margin-left: 5px;
 }
 
 
@@ -180,7 +239,7 @@ h4{
 
 
 /* testing area */
-
+/* 
 #services-t{
     display: grid;
 }
@@ -189,4 +248,4 @@ h4{
     background-color: #fff;
     color: black;
     padding: 10px;
-}
+} */
