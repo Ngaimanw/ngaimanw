@@ -1,3 +1,8 @@
+/* *{
+    height: 100vh;
+} */
+
+
 body{
     font-family: 'Cabin', sans-serif;
     background-color: #272525;
@@ -61,7 +66,7 @@ h4{
     top: 0;
     left: 0;
     background-color: #111;
-    opacity: 0.9;
+    /* opacity: 0.9; */
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
@@ -227,7 +232,9 @@ footer{
     margin-left: 5px;
 }
 
-
+.footer img{
+    width: 15%;
+}
 
 @media (max-width:568px){
     navbar-nav{display: none}
@@ -235,6 +242,14 @@ footer{
 
 @media(min-width:550px){
     .open-slide{display: none}
+}
+
+
+@media(max-width:600px){
+    .services-box{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 
