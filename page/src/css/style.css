@@ -1,6 +1,6 @@
-/* *{
+*{
     height: 100vh;
-} */
+}
 
 
 body{
@@ -10,7 +10,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 100vh;
+    /* height: 100vh; */
     width: 100vw;
     color: #cecece;
     
@@ -225,6 +225,7 @@ a:hover{
 footer{
     display: flex;
     align-items: center;
+    justify-content: space-around;
     height: 100px;
 }
 
@@ -232,9 +233,11 @@ footer{
     margin-left: 5px;
 }
 
-.footer img{
-    width: 15%;
+.footer-icon img{
+    width: 10%;
+    margin-right: 10px;
 }
+
 
 @media (max-width:568px){
     navbar-nav{display: none}
