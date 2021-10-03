@@ -1,0 +1,1 @@
+document.write('Write something in js');
